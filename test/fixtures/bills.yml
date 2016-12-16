@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Tratment_Amount: 1
+  room_amount: 1
+  total: 1
+  patient_id: 
+  tratment_id: 
+
+two:
+  Tratment_Amount: 1
+  room_amount: 1
+  total: 1
+  patient_id: 
+  tratment_id: 

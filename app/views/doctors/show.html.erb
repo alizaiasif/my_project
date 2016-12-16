@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @doctor.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @doctor.Address %>
+</p>
+
+<p>
+  <strong>Cnic:</strong>
+  <%= @doctor.cnic %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @doctor.contact %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @doctor.department %>
+</p>
+
+<%= link_to 'Edit', edit_doctor_path(@doctor) %> |
+<%= link_to 'Back', doctors_path %>

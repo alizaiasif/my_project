@@ -1,0 +1,39 @@
+<%= form_for(@doctor) do |f| %>
+  <% if @doctor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@doctor.errors.count, "error") %> prohibited this doctor from being saved:</h2>
+
+      <ul>
+      <% @doctor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="form-group">
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name,class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Address %><br>
+    <%= f.text_area :Address,class: "form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label :cnic %><br>
+    <%= f.text_field :cnic,class: "form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br>
+    <%= f.text_field :contact,class: "form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label :department_id %><br>
+    <%= f.text_field :department_id,class: "form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</div>
+<% end %>
